@@ -1,0 +1,24 @@
+##Install mqtt on raspberry pi & esp8266 
+
+* raspberry pi terminal
+#install mosquitto
+1.
+sudo apt-get update && sudo apt-get upgrade
+2.
+sudo apt-get install mosquitto mosquitto-clients -y
+3.
+mosquitto_sub -t "test_topic"
+4.open another terminal
+mosquitto_pub -t "test_topic" -m "HELLO WORLD!"
+
+# open port 1883
+5.
+sudo apt install ufw
+6.
+sudo ufw allow 1883
+7.
+sudo ufw enable
+8.
+sudo ufw status
+
+
